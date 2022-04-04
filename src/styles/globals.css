@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
 
 *,
 *::before,
@@ -11,7 +11,7 @@
 }
 :root {
   --text-color: #124a63;
-  --text-secondary: #b3c5cd;
+  --secondary-color: #b3c5cd;
   --primary-color: #21b6b7;
 
   --bg-color: #f9f9f9;

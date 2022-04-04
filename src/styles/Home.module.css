@@ -1,8 +1,8 @@
-.container {
+.counts {
+  margin: 12px 0;
+  color: var(--secondary-color);
 }
-
-.main {
-}
-
-.footer {
+.counts span {
+  color: var(--primary-color);
+  font-weight: 500;
 }
