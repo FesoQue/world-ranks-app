@@ -1,12 +1,9 @@
+import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Layout from '../component/Layout/Layout';
 
 const HomePage = () => {
-  return (
-    <div className={styles.container}>
-      <main className={styles.main}>main</main>
-      <footer className={styles.footer}>footer</footer>
-    </div>
-  );
+  return <Layout />;
 };
 
 export default HomePage;
