@@ -10,9 +10,9 @@ const HomePage = ({ countries }) => {
 
   const filteredCountry = countries.filter(
     (country) =>
-      country.name.toLowerCase().includes(keyword) ||
-      country.region.toLowerCase().includes(keyword) ||
-      country.subregion.toLowerCase().includes(keyword)
+      country.name.toLowerCase().includes(keyword.toLowerCase()) ||
+      country.region.toLowerCase().includes(keyword.toLowerCase()) ||
+      country.subregion.toLowerCase().includes(keyword.toLowerCase())
   );
 
   return (
