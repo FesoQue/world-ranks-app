@@ -6,3 +6,19 @@
   color: var(--primary-color);
   font-weight: 500;
 }
+.input_container {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 720px) {
+  .input_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .counts {
+    flex: 1;
+  }
+  .input {
+    flex: 2;
+  }
+}

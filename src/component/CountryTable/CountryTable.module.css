@@ -1,5 +1,6 @@
 .heading {
   display: flex;
+  padding: 20px 0;
 }
 .heading button {
   background-color: transparent;
@@ -7,10 +8,15 @@
   outline: none;
   cursor: pointer;
 }
-.heading_name,
-.heading_population {
+.heading_flag {
   flex: 1;
-  padding: 20px 0;
+  margin-right: 16px;
+}
+.heading_name,
+.heading_population,
+.heading_area,
+.heading_gini {
+  flex: 4;
   color: var(--secondary-color);
   font-weight: 500;
 
@@ -48,9 +54,30 @@
 }
 .country_name,
 .country_population {
-  flex: 1;
+  flex: 4;
 }
 .country_name,
 .heading_name {
   text-align: left;
+}
+.country_area,
+.country_gini {
+  flex: 4;
+}
+.flag {
+  flex: 1;
+  border-radius: 2px;
+  margin-right: 16px;
+}
+.flag img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  .country_area,
+  .country_gini,
+  .heading_area,
+  .heading_gini {
+    display: none;
+  }
 }

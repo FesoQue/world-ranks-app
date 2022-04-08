@@ -17,15 +17,20 @@ const HomePage = ({ countries }) => {
 
   return (
     <Layout>
-      <div className={styles.counts}>
-        {' '}
-        Found <span>{countries.length}</span> countries
+      <div className={styles.input_container}>
+        <div className={styles.counts}>
+          {' '}
+          Found <span>{countries.length}</span> countries
+        </div>
+
+        <div className={styles.input}>
+          <SearchInput
+            placeholder='Filter by Name, region or SubRegion'
+            value={keyword}
+            onChange={(e) => setKeyword(e.target.value)}
+          />
+        </div>
       </div>
-      <SearchInput
-        placeholder='Filter by Name, region or SubRegion'
-        value={keyword}
-        onChange={(e) => setKeyword(e.target.value)}
-      />
       <CountryTable countries={filteredCountry} />
     </Layout>
   );
